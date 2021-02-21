@@ -1,13 +1,209 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.l-container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #FFEA00;
+}
+.login{
+    min-width: 230px;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+.officeTitle{
+    margin: 0;
+    text-align: center;
+}
+.content-wrap{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+.login img{
+    display: block;
+    margin: 0 auto;
+}
+.nav{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.256px;
+    color: #1C1D21;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+.navActive{
+    opacity: 1;
+}
+.payments{
+    display: flex;
+}
+.deposit-wrap{
+    margin: 0 30px;
+}
+.deposit-item{
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.deposit-item_left{
+    flex-basis: 100%;
+}
+.deposit-item_description{
+    font-size: 14px;
+    opacity: .8;
+}
+.deposit-item_description.gray{
+    text-align: center;
+    opacity: .5;
+}
+.deposit-item-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deposit-item img{
+    margin-left: 40px;
+    cursor: pointer;
+}
+.rotate{
+    transform: rotateX(180deg);
+}
+.deposit-price_item{
+    display: flex;
+    align-items: center;
+    background-color: #FFEA00;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:14px;
+    padding: 0 20px;
+    height: 27px;
+}
+.deposit_price{
+    display: inline-flex;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:20px;
+    padding: 0 30px;
+    margin: 0 auto 35px;
+    height: 43px;
+    color: #1C1D21;
+}
+.deposit-text{
+    display: block;
+    text-align: center;
+    margin-bottom:15px;
+}
+.deposit-wrap-description{
+    width: 410px;
+    background-color: #FFEA00;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+}
+.deposit-description{
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+.deposit-description-row{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.deposit-description-row:last-child{
+    margin-bottom: 0;
+}
+.deposit-description-item{
+    display: table-cell;
+    font-weight: bold;
+    font-size: 16px;
+}
+.deposit-description-item.gray{
+    width: 70%;
+    font-weight: normal;
+    opacity: .5;
+}
+.calendar-btn-wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.calendar-btn{
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    background: #F2F3F4;
+    border-radius: 5px;
+    color: #1C1D21;
+    opacity: 0.5;
+    padding: 10px 25px;
+    margin: 0 5px;
+}
+.calendar-btn.active{
+    background: #FFEA00;
+    opacity: 1;
+}
+.calendar-item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    padding: 35px 20px;
+    margin-bottom: 30px;
+}
+.calendar-item-price{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.256px;
+    color: #000000;
+    opacity: 0.5;
+}
+.calendar-item-status{
+    display: flex;
+    align-items: center;
+    background: #64DD17;
+    font-weight: bold;
+    font-size:14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0 20px;
+    height: 27px;
+}
+.calendar-item-status.active{
+    background: #FFEA00;
+    color: #1C1D21;
+    cursor: pointer;
 }
